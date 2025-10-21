@@ -7,7 +7,7 @@ import imag from "../../../../assets/Minus-icon.png"
 
 export default function Bloglists() {
     const [apiResponse, setApiResponse] = useState([]);
-  const url = "http://localhost:3000";
+  const url = "https://next-js-blogger-beta.vercel.app/";
   
   useEffect(()=>{
     getBlogLits();

@@ -11,7 +11,7 @@ export default function AddBlogs() {
     { value: 'reactjs', label: 'React Js' },{ value: 'nextjs', label: 'Next Js' },
     { value: 'expressjs', label: 'Express Js' },{ value: 'git', label: 'Git' },]; 
   const [data,  setData] = React.useState({blogImage: upload_area, blogTitle: "", blogDescription: "", blogCategory: "reactjs"});
-  const url = "http://localhost:3000";
+  const url = "https://next-js-blogger-beta.vercel.app";
   const [imagePreviewUrl, setImagePreviewUrl] = useState(upload_area);
 
     const handleInput = (event) => {      

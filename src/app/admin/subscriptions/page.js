@@ -5,7 +5,7 @@ import toast, { Toaster } from "react-hot-toast";
 
 
 export default function Subscriptions() {
-  const url = "http://localhost:3000";
+  const url = "https://next-js-blogger-beta.vercel.app/";
   const [apiResponse, setApiResponse] = useState([]);
 
   useEffect(() => {

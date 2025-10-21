@@ -12,7 +12,7 @@ const BlogItems = () => {
   const [apiResponse, setApiResponse] = useState([]);
   const [filterResponse, setFilterResponse] = useState([]);
   const [types, setTypes] = useState("all");
-  const url = "http://localhost:3000";
+  const url = "https://next-js-blogger-beta.vercel.app";
 
   useEffect(()=>{
     getBlogLits();
