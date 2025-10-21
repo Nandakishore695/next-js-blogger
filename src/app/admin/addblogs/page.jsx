@@ -37,26 +37,26 @@ export default function AddBlogs() {
   return (
     <div>
         <Toaster position="top-center" reverseOrder={false} />
-      <form action="post" onSubmit={handleSubmit} className="p-5"  >
+      <form action="post" onSubmit={handleSubmit} className="p-5">
         <label htmlFor="uploadThumbnail" className="cursor-pointer">Upload Thumbnail
         <Image src={imagePreviewUrl} alt="thumbnail"  htmlFor="uploadThumbnail"  width={100} height={64}/>
         </label>
         <br />
-        <input type="file" name="blogImage" id="uploadThumbnail" hidden onChange={handleInput}  value={data.blogImage} />
+        <input type="file" name="blogImage" id="uploadThumbnail" hidden onChange={handleInput}  value={data?.blogImage} />
         <br />
         <label htmlFor="blogTitle" className="my-4">Blog Title</label>
         <br />
-        <input type="text" name="blogTitle" id="blogTitle" className="border-2 pr-12 p-2 rounded" placeholder="Type here" autoComplete="off" onChange={handleInput} value={data.blogTitle}/>
+        <input type="text" name="blogTitle" id="blogTitle" className="border-2 pr-12 p-2 rounded" placeholder="Type here" autoComplete="off" onChange={handleInput} value={data?.blogTitle}/>
         <br />
         <label htmlFor="blogDescription">Blog Description</label>
         <br />
-        <input type="message" name="blogDescription" id="blogDescription" className="border-2 pb-[64px] px-2 pr-12 rounded" placeholder="write content here" autoComplete="off" onChange={handleInput} value={data.blogDescription}/>
+        <input type="message" name="blogDescription" id="blogDescription" className="border-2 pb-[64px] px-2 pr-12 rounded" placeholder="write content here" autoComplete="off" onChange={handleInput} value={data?.blogDescription}/>
         <br />
         <label htmlFor="blogCategory">Blog Category</label>
         <br />
-        <select id="blogCategory" name="blogCategory" className="border-2 px-8 rounded py-2 " onChange={handleInput}  value={data.blogCategory}>
+        <select id="blogCategory" name="blogCategory" className="border-2 px-8 rounded py-2 " onChange={handleInput}  value={data?.blogCategory}>
           {options.map((option) => (
-            <option key={option.value} value={option.value}>
+            <option key={option.value} value={option?.value}>
             {option.label}
           </option> ))}
           </select>

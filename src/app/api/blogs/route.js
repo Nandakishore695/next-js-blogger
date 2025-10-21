@@ -1,6 +1,7 @@
 import connectDb from "@/library/config/db";
 import { NewBlog } from "@/library/model/Blogs";
 import { NextResponse } from "next/server";
+
 export async function POST(request) {
   try {
     await connectDb();
@@ -18,7 +19,6 @@ export async function GET(request) {
   try {
     await connectDb();
       const id = request.nextUrl.searchParams.get("id");
-    console.log(id,"id");
     if(id){
     const response = await NewBlog.findById(id);
     return NextResponse.json({message: "Blog Detail", success: true, response})
