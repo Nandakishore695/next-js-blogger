@@ -16,7 +16,7 @@ const Header = () => {
 
         <ul className="nav nav-pills">
           <li className="nav-item">
-            <Link href="/admin-dashboard/addblogs" className="nav-link shadow p-2 text-decoration-none text-black rounded border border-dark " aria-current="page">
+            <Link href="/admin/addblogs" className="nav-link shadow p-2 text-decoration-none text-black rounded border border-dark " aria-current="page">
               Admin Dashboard
             </Link>
           </li>

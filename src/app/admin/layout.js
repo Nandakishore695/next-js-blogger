@@ -22,13 +22,13 @@ export default function layout({ children }) {
         <div className="row flex-lg g-5">
           <div className="col-lg-4 border border-dark">
             <div className="d-grid gap-2 mb-4 mb-lg-3 pt-5">
-              <Link href="/admin-dashboard/addblogs" type="button" className="btn btn-dark btn-lg px-4 me-md-2 fw-bold">
-               Add Blog
+              <Link href="/admin/addblogs" type="button" className="btn btn-dark btn-lg px-4 me-md-2 fw-bold">
+                Add Blog
               </Link>
-              <Link href="/admin-dashboard/bloglists" type="button" className="btn btn-outline-dark btn-lg px-4">
+              <Link href="/admin/bloglists" type="button" className="btn btn-outline-dark btn-lg px-4">
                 Blog List
               </Link>
-              <Link href="/admin-dashboard/subscriptions" type="button" className="btn btn-outline-dark btn-lg px-4">
+              <Link href="/admin/subscriptions" type="button" className="btn btn-outline-dark btn-lg px-4">
                 Subscriber
               </Link>
             </div>
