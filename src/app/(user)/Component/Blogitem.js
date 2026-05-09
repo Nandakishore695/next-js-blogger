@@ -2,7 +2,6 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import toast, { Toaster } from 'react-hot-toast';
-import Link from "next/link";
 import axios from "axios";
 import { assets } from "../../../../assets/assets";
 import TabsNavigation from "./Tabs-Navigation";
@@ -17,8 +16,8 @@ const BlogItems = () => {
   const baseUrl = 'http://localhost:3000/' || 'https://next-js-blogger-beta.vercel.app';
 
   useEffect(() => {
-    getBlogLits();
-  }, []);
+    getBlogLits(baseUrl);
+  }, [baseUrl]);
 
   const handleEmailSubscribe = (event) => {
     const { name, value } = event.target;
@@ -41,7 +40,7 @@ const BlogItems = () => {
     }
   };
 
-  const getBlogLits = async () => {
+  const getBlogLits = async (baseUrl) => {
     try {
       const response = await axios.get(`${baseUrl}/api/blogs`);
       setApiResponse(response.data);

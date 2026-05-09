@@ -14,11 +14,11 @@ export default function BlogView() {
  } = assets;
   
 
-  useEffect(()=>{
-      getBlogVeiw();
+  useEffect((id)=>{
+      getBlogVeiw(id);
   },[id]);
 
-  const getBlogVeiw = async () =>{
+  const getBlogVeiw = async (id) =>{
     try {
     const response = await axios.get(`${process.env.NEXT_PUBLIC_LOCALHOST_URL}/api/blogs/?id=${id}`);
     setApiResponse(response.data.response);      
