@@ -1,4 +1,4 @@
-import BlogItems from "@/Component/Blogitem";
+import BlogItems from "@/app/(user)/Component/Blogitem";
 
 export default function Home() {
   return (

@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import toast, { Toaster } from "react-hot-toast";
 import Image from "next/image";
-import imag from "../../../../assets/Minus-icon.png"
 
 export default function Bloglists() {
     const [apiResponse, setApiResponse] = useState([]);
